@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(32, 49, 29, 0.74);
+}
+
+body {
+  background-color: rgb(29, 100, 207);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: flex-direction column;
+}
+
+.calculadora {
+  height: 80vh;
+  background-color: rgb(200, 207, 212);
+  width: 400px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.calculadora .pantalla {
+  background-color: rgb(137, 151, 137);
+  height: 86px;
+  border: solid 10px rgb(195, 195, 195);
+  font-size: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: flex-direction column;
+  width: 88%;
+  margin: 24px 24px 2px 24px;
+  padding: 4px;
+}
+.calculadora .btn-container {
+  width: 88%;
+  margin: 24px 24px 2px 24px;
+  padding: 4px;
+  height: 88%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  place-items: center;
+  gap: 10px;
+}
+.calculadora button {
+  height: 60px;
+  width: 80px;
+  border-radius: 18px;
+  border-style: none;
+  background-color: rgba(128, 128, 128, 0.568);
+  font-size: 30px;
+  cursor: pointer;
+}
+.calculadora button:hover {
+  background-color: rgba(168, 159, 35, 0.438);
+  border-style: solid;
+}
+.calculadora .igual {
+  background-color: rgba(255, 94, 0, 0.856);
+  color: white;
+  grid-row: span 2;
+  height: 90%;
+}
+.calculadora .igual:hover {
+  background-color: rgb(255, 94, 0);
+}
+.calculadora .fa-x {
+  color: white;
+}
+.calculadora .white {
+  color: white;
+  background-color: rgb(92, 87, 87);
+}
+.calculadora .white:hover {
+  background-color: rgb(68, 65, 65);
+}
+
+@media (max-width: 420px) {
+  .calculadora {
+    width: 260px;
+    margin: 0 auto;
+    height: 400px;
+  }
+  .calculadora button {
+    width: 47px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .calculadora .pantalla {
+    margin: 16px;
+  }
+  .calculadora .btn-container {
+    margin: 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */
