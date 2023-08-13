@@ -20,6 +20,7 @@ body {
   background-color: rgb(200, 207, 212);
   width: 400px;
   border-radius: 3px;
+  max-height: 483px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
